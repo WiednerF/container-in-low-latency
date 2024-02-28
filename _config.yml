@@ -1,0 +1,48 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Performance Evaluation of Containers for Low-Latency Packet Processing in Virtualized Network Environments
+email: wiedner@net.in.tum.de
+description: >- # this means to ignore newlines until "baseurl:"
+  Packet processing in current network scenarios faces complex challenges due to the increasing prevalence of requirements such as low latency, high reliability, and resource sharing.
+  Virtualization is a potential solution to mitigate these challenges by enabling resource sharing and on-demand provisioning; however, ensuring high reliability and ultra-low latency remains a key challenge.
+  Since bare-metal systems are often impractical because of high cost and space usage, and the overhead of virtual machines (VMs) is substantial, we evaluate the utilization of containers as a potential lightweight solution for low-latency packet processing.
+  Herein, we discuss the benefits and drawbacks and encourage container environments in low-latency packet processing when the degree of isolation of customer data is adequate and bare metal systems are unaffordable.
+  Our results demonstrate that containers exhibit similar latency performance with more predictable tail-latency behavior than bare metal packet processing.
+  Moreover, deciding which mainboard architecture to use, especially the cache division, is equally vital as containers are prone to higher latencies on more shared caches between cores.
+  We show that this has a higher impact on latencies within containers than on bare metal or VMs, resulting in the selection of hardware architectures following optimizations as a critical challenge.
+  Furthermore, the results reveal that the virtualization overhead does not impact tail latencies.
+domain: "wiednerf.github.io"
+baseurl: "/container-in-low-latency" # the subpath of your site, e.g. /blog
+url: "https://wiednerf.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  wiednerf
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

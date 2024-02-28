@@ -1,0 +1,45 @@
+---
+# front matter tells Jekyll to process Liquid
+---
+<!DOCTYPE html>
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" style="">
+  {% include head.html %}
+  <body class="homepage homepage_index">
+    {% include header.html %}
+    <main class="content container" role="main">
+        <div class="content-row">
+    	{% include nav.html %}
+    	 <article class="inner-content">
+          <div class="inner-content">
+    		<h1 id="the-chair-of-br-network-architectures-and-services">Reproducing Evaluation Results</h1>
+    		<p></p>
+    		<div class="card">
+		  <div class="card-header">
+		    Abstract
+		  </div>
+		  <div class="card-body">
+		    <p></p>
+		    <h4 class="card-title">Performance Evaluation of Containers for Low-Latency Packet Processing in Virtualized Network Environments</h4>
+		    <p class="card-text">Packet processing in current network scenarios faces complex challenges due to the increasing prevalence of requirements such as low latency, high reliability, and resource sharing.
+Virtualization is a potential solution to mitigate these challenges by enabling resource sharing and on-demand provisioning; however, ensuring high reliability and ultra-low latency remains a key challenge.
+Since bare-metal systems are often impractical because of high cost and space usage, and the overhead of virtual machines (VMs) is substantial, we evaluate the utilization of containers as a potential lightweight solution for low-latency packet processing.
+Herein, we discuss the benefits and drawbacks and encourage container environments in low-latency packet processing when the degree of isolation of customer data is adequate and bare metal systems are unaffordable.
+Our results demonstrate that containers exhibit similar latency performance with more predictable tail-latency behavior than bare metal packet processing.
+Moreover, deciding which mainboard architecture to use, especially the cache division, is equally vital as containers are prone to higher latencies on more shared caches between cores.
+We show that this has a higher impact on latencies within containers than on bare metal or VMs, resulting in the selection of hardware architectures following optimizations as a critical challenge.
+Furthermore, the results reveal that the virtualization overhead does not impact tail latencies.</p>
+		  </div>
+		</div>
+		<div class="m-4">
+		<p></p>
+		<p>This page contains all scripts, resources, and information needed to reproduce or further evaluate the data from the Paper Florian Wiedner, Max Helm, Alexander Daichendt, Jonas Andre, Georg Carle "Performance Evaluation of Containers for Low-Latency Packet Processing in Virtualized Network Environments", submitted as extended version to the journal Performance Evaluation.</p>
+		<p>All scripts and precompiled data can be found in the following repository: <a href="https://github.com/wiednerf/container-in-low-latency/tree/main"> https://github.com/wiednerf/containerized-low-latency/tree/main </a>, all raw data from analyzed scenario 1 can be found in the following repository <a href="https://doi.org/10.14459/2023mp1718824"> https://doi.org/10.14459/2023mp1718824</a>, all raw data from scenario 2 will be provided as soon as the repository is ready.</p>
+		</div>
+<div class="fadein">
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    {% include footer.html %}
+</body></html>

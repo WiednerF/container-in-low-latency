@@ -1,0 +1,85 @@
+---
+# front matter tells Jekyll to process Liquid
+---
+<!DOCTYPE html>
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" style="">
+  {% include head.html %}
+  <body class="homepage homepage_index">
+    {% include header.html %}
+    <main class="content container" role="main">
+        <div class="content-row">
+    	{% include nav.html %}
+    	 <article class="inner-content">
+          <div class="inner-content">
+						<h1 id="the-chair-of-br-network-architectures-and-services">Table 3 and Figure 11</h1>
+						<p></p>
+						<h5>Table</h5>
+
+						<p><table class="table  table-striped">
+							    <tr>
+								<td  scope="col">Platform</td>
+                                <td  scope="col"></td>
+								<td  scope="col">Image</td>
+                                <td  scope="col"></td>
+								<td  scope="col"></td>
+							    </tr>
+                                 <tr>
+                                <td  scope="col"></td>
+                                <td  scope="col">Vanilla</td>
+                                <td  scope="col"></td>
+                                <td  scope="col">opt. RT</td>
+                                <td  scope="col"></td>
+                                </tr>
+                                 <tr>
+                                <td  scope="col"></td>
+                                <td  scope="col">x<sub>m</sub> →</td>
+                                <td  scope="col">µ ↑</td>
+                                <td  scope="col">x<sub>m</sub> →</td>
+                                <td  scope="col">µ ↑</td>
+                                </tr>
+							    <tr>
+								<td  scope="row">Bare-metal</td>
+								<td>16.7%</td>
+								<td>0.33</td>
+								<td>60.0%</td>
+								<td>3.30</td>
+							    </tr>
+							    <tr>
+								<td  scope="row">Virtual Machine</td>
+								<td>25.0%</td>
+								<td>2.58</td>
+								<td>58.3%</td>
+								<td>4.00</td>
+							    </tr>
+							    <tr>
+								<td  scope="row">Container</td>
+								<td>16.7%</td>
+								<td><b>1.50</b></td>
+								<td><b>66.7%</b></td>
+								<td>3.83</td>
+							    </tr>
+							</table></p>
+
+                        <h2>Reproducibility</h2>
+                        <h3>CSV Timestamp Data</h3>
+                        <hr>
+						<p>All sampled CSV timestamp Data for scenario1 are available under <a href="https://doi.org/10.14459/2023mp1718824"> https://doi.org/10.14459/2023mp1718824</a>.</p>
+						<p>Link to sampled CSV timestamp Data for scenario2 will be added as soon as the repository is available.</p>
+                        <h3>EVT Modeling and Evaluation</h3>
+                        <hr>
+                        <p><a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#setupE" role="button" aria-expanded="false" aria-controls="setupE">
+                            Create EVT Models
+                          </a></p>
+                          <div class="collapse" id="setupE">
+                              {% include evt-model.html %}
+                         </div>
+
+
+<div class="fadein">
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    {% include footer.html %}
+</body></html>

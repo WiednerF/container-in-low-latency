@@ -12,7 +12,7 @@
     	 <article class="inner-content">
           <div class="inner-content">
 
-						<h1 id="the-chair-of-br-network-architectures-and-services">Figure 9</h1>
+						<h1 id="the-chair-of-br-network-architectures-and-services">Figure 12</h1>
 						<p></p>												
 						<h4>Scenario 1</h4>
 						<h5>Vanilla, not optimized, bare-metal</h5>
@@ -759,7 +759,7 @@
 								</div>
 								<div class="card col-12">
 								  <div class="card-body">
-								    <h5 class="card-title">VM</h5>
+								    <h5 class="card-title">Bare-metal</h5>
 								    <div class="card-text">
 									{% include setup_dut_dependencies_hw.html %}
 								    </div>
@@ -774,7 +774,7 @@
 							  <h4>Configure Container and Management Interface (only container-experiments)</h4>
 							  <p>The following requirements apply before the next step: 
 							  <ul>
-							  <li>A DHCP server for setting the IP address of bridge and container/VM</li>
+							  <li>A DHCP server for setting the IP address of bridge and container/bare-metal</li>
 							  <li>a SSH public key under /root/.ssh/authorized_keys (only for container)</li>
 							  <li><a href="https://github.com/wiednerf/containerized-low-latency/blob/main/scripts/setup/dut/prepare_container.sh">prepare_container.sh</a> script on the DuT under /root (for container)</li>
 							  </ul>
@@ -831,11 +831,11 @@
 						  <div class="collapse" id="setupHW">
 							{% include setup_hw_libmoon.html %}
 						 </div>
-						<div class="mt-5">After setup, the container/VM can now be started using IPMI from remote or local when the ipmitools are installed: <pre><code>ipmitool -I lanplus -H [IP-Adresse>] -U ADMIN -P password power on</code></pre></div>
+						<div class="mt-5">After setup, the container/bare-metal can now be started using IPMI from remote or local when the ipmitools are installed: <pre><code>ipmitool -I lanplus -H [IP-Adresse>] -U ADMIN -P password power on</code></pre></div>
 						
 						<h3>Experiment</h3>
 						<hr>
-						<p>1. Start Forwarder in the container/VM on the DuT:</p>
+						<p>1. Start Forwarder in the container/bare-metal on the DuT:</p>
 						<p><a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#experimentF" role="button" aria-expanded="false" aria-controls="experimentF">
 						    Forwarder
 						  </a></p>
@@ -863,7 +863,7 @@
 						<h3>Raw PCAP Data</h3>
 						<hr>
 						<p>All sampled RAW PCAP-Data for scenario1 are available under <a href="https://doi.org/10.14459/2023mp1718824"> https://doi.org/10.14459/2023mp1718824</a>.</p>
-						<p>Link to Raw PCAP Data for scenario2 will be added as soon as the repository is available.</p>
+						<p>All sampled RAW PCAP-Data for scenario2 are available under <a href="https://doi.org/10.14459/2024mp1736868"> https://doi.org/10.14459/2024mp1736868</a>.</p>
 						<h3>Evaluation</h3>
 						<hr>
 						<p><a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#setupE" role="button" aria-expanded="false" aria-controls="setupE">

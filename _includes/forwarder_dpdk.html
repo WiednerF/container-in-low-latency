@@ -1,0 +1,6 @@
+
+<pre><code>
+prefix=$(hostname)
+
+/root/dpdk-21.11/build/examples/dpdk-l3fwd -l 24-25 -n 4 --file-prefix $prefix --socket-mem 0,0,0,512 -- -p 0x3 --config '(0,0,24),(1,0,25)' -P --eth-dest=1,54:51:01:00:00:00"
+</code></pre>
